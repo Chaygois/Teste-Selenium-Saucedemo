@@ -59,4 +59,4 @@ O script de teste executa as seguintes ações:
 * Mensagens de sucesso serão exibidas no console para cada etapa do teste.
 * Em caso de falha, mensagens de erro detalhadas serão exibidas no console.
 
-* ![image.png](attachment:947da078-ca2b-43a7-a98e-813268553dba:b8eaf300-b308-485e-b49e-5633e65ed9f7.png)
+
