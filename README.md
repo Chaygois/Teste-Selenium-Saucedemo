@@ -1,62 +1,33 @@
-# Teste Automatizado de Fluxo de Compra com Selenium
+# Teste Automatizado de Fluxo de Compra com Selenium WebDriver
 
-Este repositório contém um teste automatizado que simula o fluxo de compra em um site de comércio eletrônico, utilizando o Selenium WebDriver com Python. O objetivo principal é verificar a funcionalidade correta do processo de login, adição de itens ao carrinho, checkout e finalização da compra.
+Este repositório contém um teste automatizado que simula o fluxo de compra em um site de comércio eletrônico, utilizando Selenium WebDriver. O objetivo principal é validar o funcionamento correto do processo de login, adição de itens ao carrinho, checkout e finalização da compra.
 
 ## Requisitos
 
-Para executar este teste, você precisará dos seguintes componentes instalados em seu sistema:
+Para executar este teste, são necessários:
 
-* **Python 3.x:** A linguagem de programação utilizada para o script de teste.
-* **Selenium:** A biblioteca Python para automatização de navegadores web.
-* **WebDriver (ChromeDriver):** O driver específico para o navegador Google Chrome, que permite ao Selenium controlá-lo.
+- Ambiente configurado com Selenium WebDriver na linguagem escolhida (Java, C#, etc.).
+- Driver correspondente ao navegador utilizado (ChromeDriver, GeckoDriver, etc.).
+- IDE para desenvolvimento e execução dos scripts (ex.: Visual Studio Code, IntelliJ IDEA, Eclipse).
+- Ferramentas auxiliares para gerenciamento de dependências e builds (Maven, Gradle, etc.).
 
-## Instalação
+## Funcionalidades testadas
 
-Siga estas etapas para configurar o ambiente de teste:
+- Validação do fluxo de login de usuário.
+- Navegação e seleção de produtos.
+- Adição de produtos ao carrinho de compras.
+- Processo de checkout e finalização da compra.
+- Verificação de mensagens e confirmações durante o fluxo.
 
-1.  **Instale o Python 3.x:**
-    * Se você ainda não tiver o Python instalado, baixe a versão mais recente do site oficial do Python: [python.org](https://www.python.org/).
-2.  **Instale o Selenium:**
-    * Abra o terminal ou prompt de comando e execute o seguinte comando para instalar o Selenium usando o gerenciador de pacotes pip:
+## Estrutura do projeto
 
-    ```bash
-    pip install selenium
-    ```
+- Código fonte dos scripts de teste.
+- Arquivos de configuração do WebDriver.
+- Documentação e scripts de execução.
 
-3.  **Baixe o ChromeDriver:**
-    * Baixe o ChromeDriver correspondente à versão do seu navegador Google Chrome no site oficial do ChromeDriver: [chromedriver.chromium.org](https://chromedriver.chromium.org/).
-    * Coloque o arquivo `chromedriver.exe` (ou `chromedriver` em sistemas Linux/macOS) no mesmo diretório do script de teste (`test_purchase_flow.py`) ou adicione o caminho do ChromeDriver à variável de ambiente PATH do seu sistema.
+## Como executar
 
-
-## Como Executar o Teste
-
-1.  Certifique-se de que o Python e o ChromeDriver estão configurados corretamente.
-2.  Abra o terminal ou prompt de comando e navegue até o diretório do projeto.
-3.  Execute o script de teste com o seguinte comando:
-
-    ```bash
-    python test_purchase_flow.py
-    ```
-
-4.  O script abrirá uma janela do navegador Google Chrome e executará automaticamente as etapas do fluxo de compra.
-
-## Descrição do Teste
-
-O script de teste executa as seguintes ações:
-
-1.  Acessa a página inicial do site de demonstração de comércio eletrônico.
-2.  Realiza o login com o usuário "standard_user" e a senha "secret_sauce".
-3.  Adiciona um item ao carrinho de compras e verifica se a adição foi bem-sucedida.
-4.  Acessa a página do carrinho de compras para validar a presença do item.
-5.  Inicia o processo de checkout.
-6.  Preenche as informações de checkout (nome, sobrenome e código postal).
-7.  Finaliza a compra e verifica se a mensagem de sucesso "THANK YOU FOR YOUR ORDER" é exibida.
-8.  Fecha o navegador após a conclusão do teste.
-
-## Resultados Esperados
-
-* O teste deve ser executado sem erros se o fluxo de compra estiver funcionando corretamente.
-* Mensagens de sucesso serão exibidas no console para cada etapa do teste.
-* Em caso de falha, mensagens de erro detalhadas serão exibidas no console.
-
-
+1. Configurar o ambiente de desenvolvimento com as dependências do Selenium WebDriver.
+2. Baixar e configurar o driver do navegador escolhido (ex.: ChromeDriver).
+3. Executar os testes através da IDE ou ferramenta de build.
+4. Analisar os relatórios gerados para validar os resultados.
